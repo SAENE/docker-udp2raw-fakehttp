@@ -13,6 +13,6 @@ RUN set -xe && \
     apk del curl 
 
 COPY server.conf /config.conf 
-EXPOSE 900
+# EXPOSE 900
 
 CMD ["/udp2raw", "--conf-file", "config.conf"]
