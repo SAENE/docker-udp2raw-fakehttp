@@ -1,11 +1,11 @@
 FROM alpine:latest
-LABEL authors "jasperhale <ljy087621@gmail.com>"
+LABEL authors "saene <yqyq2323@gmail.com>"
 
-ENV VERSION="20200818.0"
+ENV VERSION="20250315.0"
 
 RUN set -xe && \
     apk add --no-cache iptables ip6tables  curl && \
-    curl -fsSLO --compressed "https://github.com/wangyu-/udp2raw-tunnel/releases/download/$VERSION/udp2raw_binaries.tar.gz" && \
+    curl -fsSLO --compressed "https://github.com/MikeWang000000/udp2raw/releases/download/20250315.0-fakehttp/udp2raw_binaries.tar.gz" && \
     tar -zxvf udp2raw_binaries.tar.gz && \
     cp udp2raw_amd64 usr/udp2raw && \
     rm udp2raw_* && \
