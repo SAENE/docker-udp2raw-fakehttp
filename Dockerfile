@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.22.1
 LABEL authors "saene <yqyq2323@gmail.com>"
 
 ENV VERSION="20250315.0"
